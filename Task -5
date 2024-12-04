@@ -1,0 +1,71 @@
+2) public class Encap2 {
+	    public static void main(String[] args) {
+	        
+	        Scanner scanner = new Scanner(System.in);
+
+	        
+	        System.out.print("Enter a string: ");
+	        String input = scanner.nextLine();
+            String reversedString = "";
+            for (int i = input.length() - 1; i >= 0; i--) {
+	            reversedString += input.charAt(i); 
+	        }
+            System.out.println("Reversed string: " + reversedString);
+
+	        // Close the scanner to prevent resource leak
+	        scanner.close();
+	    }
+	}
+3) public class Encap2 {
+    public static void main(String[] args) {
+     
+        Scanner scanner = new Scanner(System.in);
+
+       
+        System.out.print("Enter a number: ");
+        int n = scanner.nextInt();
+
+        
+        int currentNumber = 1;
+
+       
+        for (int i = 1; i <= n; i++) {
+            // Print the current row's numbers
+            for (int j = 1; j <= i; j++) {
+                System.out.print(currentNumber + " ");
+                currentNumber++;
+            }
+           
+            System.out.println();
+        }
+
+        scanner.close();
+    }
+}
+4) public class Encap2 {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+
+       
+        System.out.print("Enter a number: ");
+        int n = scanner.nextInt();
+
+        
+        for (int i = 0; i < n; i++) {
+            
+            for (int j = 0; j < n; j++) {
+               
+                if (i == j || i + j == n - 1) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" "); 
+                }
+            }
+            System.out.println();         }
+
+      
+        scanner.close();
+    }
+}
+5) 
